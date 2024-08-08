@@ -1,0 +1,7 @@
+{
+    "name": "HideAppsIcon",
+    "description": "Hides the apps icon in the chat input.",
+    "vendetta": {
+        "icon": "AppsIcon"
+    }
+}
