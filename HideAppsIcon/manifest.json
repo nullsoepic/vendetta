@@ -1,7 +1,15 @@
 {
-    "name": "HideAppsIcon",
-    "description": "Hides the apps icon in the chat input.",
-    "vendetta": {
-        "icon": "AppsIcon"
+  "authors": [
+    {
+      "name": "mevibing",
+      "id": "706514153916858400"
     }
+  ],
+  "main": "index.js",
+  "name": "HideAppsIcon",
+  "description": "Hides the apps icon in the chat input.",
+  "vendetta": {
+    "icon": "AppsIcon"
+  },
+  "hash": "2e1753eb1cef1443964f0b06b54728febd508da47c2ae3a380d79f38a4fc97fd"
 }
