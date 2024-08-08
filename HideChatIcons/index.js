@@ -1,19 +1,24 @@
-import { findByName } from "@vendetta/metro";
-import { after } from "@vendetta/patcher";
-import { getAssetIDByName } from "@vendetta/ui/assets";
-import { findInReactTree } from "@vendetta/utils";
-
-const ChatInput = findByName("ChatInput");
-
-let unpatch: () => boolean;
-
-export default {
+(function (e, a, i, c, s) {
+  "use strict";
+  const u = a.findByName("ChatInput");
+  let n;
+  var d = {
     onLoad() {
-        const blockList = ["AppsIcon"].map(n => getAssetIDByName(n));
-        unpatch = after("render", ChatInput.prototype, (_, ret) => {
-            const input = findInReactTree(ret, t => "forceAnimateButtons" in t.props && t.props.actions);
-            input.props.actions = input.props.actions.filter(a => !blockList.includes(a.source));
+      const f = ["ic_gift_24px", "ic_gift", "AppsIcon"].map(function (r) {
+        return c.getAssetIDByName(r);
+      });
+      n = i.after("render", u.prototype, function (r, p) {
+        const o = s.findInReactTree(p, function (t) {
+          return "forceAnimateButtons" in t.props && t.props.actions;
         });
+        o.props.actions = o.props.actions.filter(function (t) {
+          return !f.includes(t.source) && f.includes(t.type);
+        });
+      });
     },
-    onUnload: unpatch
-};
+    onUnload: n,
+  };
+  return (
+    (e.default = d), Object.defineProperty(e, "__esModule", { value: !0 }), e
+  );
+})({}, vendetta.metro, vendetta.patcher, vendetta.ui.assets, vendetta.utils);

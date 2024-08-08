@@ -6,10 +6,10 @@
     }
   ],
   "main": "index.js",
-  "name": "HideAppsIcon",
-  "description": "Hides the apps icon in the chat input.",
+  "name": "HideChatIcons",
+  "description": "Hides annoying icons next to the chat input.",
   "vendetta": {
     "icon": "AppsIcon"
   },
-  "hash": "2e1753eb1cef1443964f0b06b54728febd508da47c2ae3a380d79f38a4fc97fd"
+  "hash": "3f83abe4d48be8481b6bfd165b20af5f803a09d607beeaa849b0ced5154ff83a"
 }
