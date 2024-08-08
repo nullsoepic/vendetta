@@ -1,0 +1,15 @@
+{
+  "authors": [
+    {
+      "name": "mevibing",
+      "id": "706514153916858400"
+    }
+  ],
+  "main": "index.js",
+  "name": "HideGiftIcon",
+  "description": "Hides the gift icon next to the chat input.",
+  "vendetta": {
+    "icon": "ic_gift"
+  },
+  "hash": "902c494844cee800a185ed1f121a4044e648458055fc4436da3ae8ae003f69eb"
+}
