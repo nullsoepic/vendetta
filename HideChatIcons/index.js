@@ -12,7 +12,7 @@
           return "forceAnimateButtons" in t.props && t.props.actions;
         });
         o.props.actions = o.props.actions.filter(function (t) {
-          return !f.includes(t.source) && f.includes(t.type);
+          return !f.includes(t.source);
         });
       });
     },
